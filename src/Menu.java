@@ -93,6 +93,7 @@ public class Menu extends javax.swing.JFrame {
     private void buttonSoloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSoloActionPerformed
         this.setVisible(false);
         controller.getgGUI().setVisible(true);
+        //Jfohsdfbsdjfbdsjbfksdfsdf
     }//GEN-LAST:event_buttonSoloActionPerformed
 
     private void buttonMultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMultiActionPerformed
