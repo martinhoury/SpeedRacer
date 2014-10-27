@@ -29,7 +29,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="labelName" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="buttonConfirmer" min="-2" pref="106" max="-2" attributes="0"/>
+                              <Component id="buttonConnexion" min="-2" pref="106" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                               <Component id="buttonAnnuler" min="-2" pref="106" max="-2" attributes="0"/>
                           </Group>
@@ -49,7 +49,7 @@
               <Component id="fieldName" min="-2" pref="37" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="buttonConfirmer" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="buttonConnexion" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="buttonAnnuler" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
@@ -71,12 +71,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fieldNameActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonConfirmer">
+    <Component class="javax.swing.JButton" name="buttonConnexion">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Confirmer"/>
+        <Property name="text" type="java.lang.String" value="Connexion"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonConfirmerActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonConnexionActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="buttonAnnuler">

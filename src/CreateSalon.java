@@ -42,6 +42,11 @@ public class CreateSalon extends javax.swing.JFrame {
         });
 
         buttonCreer.setText("Créer");
+        buttonCreer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCreerActionPerformed(evt);
+            }
+        });
 
         buttonAnnuler.setText("Annuler");
         buttonAnnuler.addActionListener(new java.awt.event.ActionListener() {
@@ -94,6 +99,20 @@ public class CreateSalon extends javax.swing.JFrame {
         this.setVisible(false);
         this.controller.getInterfaceSalon().setVisible(true);
     }//GEN-LAST:event_buttonAnnulerActionPerformed
+
+    private void buttonCreerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCreerActionPerformed
+        /*TODO:
+        try {
+            Response serverResponse = controller.rmi.createSalon(fieldNameSalon.getText(),controller.currentUser);
+            if(serverResponse.isSuccesfull()){
+                this.setVisible(false);
+            }else{
+                this.textWarning.setText(serverResponse.getMessage());
+            }
+        } catch (RemoteException ex) {
+            Logger.getLogger(CreateSalon.class.getName()).log(Level.SEVERE, null, ex);
+        }*/
+    }//GEN-LAST:event_buttonCreerActionPerformed
 
     /**
      * @param args the command line arguments

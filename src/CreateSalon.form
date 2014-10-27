@@ -64,6 +64,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Cr&#xe9;er"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCreerActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="buttonAnnuler">
       <Properties>

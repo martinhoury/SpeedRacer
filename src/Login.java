@@ -35,7 +35,7 @@ public class Login extends javax.swing.JFrame {
 
         labelName = new javax.swing.JLabel();
         fieldName = new javax.swing.JTextField();
-        buttonConfirmer = new javax.swing.JButton();
+        buttonConnexion = new javax.swing.JButton();
         buttonAnnuler = new javax.swing.JButton();
 
         labelName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -47,10 +47,10 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        buttonConfirmer.setText("Confirmer");
-        buttonConfirmer.addActionListener(new java.awt.event.ActionListener() {
+        buttonConnexion.setText("Connexion");
+        buttonConnexion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonConfirmerActionPerformed(evt);
+                buttonConnexionActionPerformed(evt);
             }
         });
 
@@ -74,7 +74,7 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(labelName)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(buttonConfirmer, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(buttonConnexion, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(39, 39, 39)
                                 .addComponent(buttonAnnuler, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(64, Short.MAX_VALUE))
@@ -88,7 +88,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(fieldName, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonConfirmer, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonConnexion, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonAnnuler, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32))
         );
@@ -105,10 +105,18 @@ public class Login extends javax.swing.JFrame {
         this.controller.getInterfaceMenu().setVisible(true);
     }//GEN-LAST:event_buttonAnnulerActionPerformed
 
-    private void buttonConfirmerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConfirmerActionPerformed
+    private void buttonConnexionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConnexionActionPerformed
         this.setVisible(false);
+        /*TODO
+        try {
+            controller.currentUser.nomdelafonctionlisteuser(textLogin.getText());
+            }
+        
+        } catch (RemoteException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }*/
         this.controller.getInterfaceSalon().setVisible(true);
-    }//GEN-LAST:event_buttonConfirmerActionPerformed
+    }//GEN-LAST:event_buttonConnexionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,7 +155,7 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonAnnuler;
-    private javax.swing.JButton buttonConfirmer;
+    private javax.swing.JButton buttonConnexion;
     private javax.swing.JTextField fieldName;
     private javax.swing.JLabel labelName;
     // End of variables declaration//GEN-END:variables
